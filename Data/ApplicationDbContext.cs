@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AppMVC_Basica.CadastroFornecedores.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,13 @@ namespace AppMVC_Basica.CadastroFornecedores.Data
         {
         }
 
+     #region DbSets
+
+        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
+
+    #endregion
 
     }
 }
